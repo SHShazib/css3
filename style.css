@@ -1,0 +1,44 @@
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    float: left;
+    background-color: green;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+
+
+
+@media all and (min-width: 700px) and (max-width: 900px){
+    .box {
+        width: 29%;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 700px){
+    .box {
+        width: 46%;
+    }
+}
+@media all and (min-width: 200px) and (max-width: 500px){
+    h1{
+        font-size: 20px;
+    }
+    .box {
+        width: 90%;
+        margin: 2%;
+        padding: 2%;
+    }
+}
