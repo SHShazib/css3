@@ -18,9 +18,113 @@ h1{
     padding: 1%;
     border-radius: 5px;
 }
+.plane {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    width: 1100px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.circle1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    animation: circle1 4s ease infinite alternate;
+}
+@keyframes circle1 {
+    0%{
+        margin-top: 0px;
+        margin-left: 0px;
+    }    
+    20%{
+        margin-top: 200px;
+        margin-left: 200px;
+    }    
+    40%{
+        margin-top: 0px;
+        margin-left: 400px;
+    }    
+    60%{
+        margin-top: 200px;
+        margin-left: 600px;
+    }    
+    80%{
+        margin-top: 0px;
+        margin-left: 800px;
+    }    
+    100%{
+        margin-top: 200px;
+        margin-left: 1000px;
+    }    
+}
+
+.circle2{
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: circle2 4s ease infinite alternate;
+}
+@keyframes circle2 {
+    0%{
+        margin-top: 200px;
+        margin-left: 0px;
+    }    
+    20%{
+        margin-top: 0px;
+        margin-left: 200px;
+    }    
+    40%{
+        margin-top: 200px;
+        margin-left: 400px;
+    }    
+    60%{
+        margin-top: 0px;
+        margin-left: 600px;
+    }    
+    80%{
+        margin-top: 200px;
+        margin-left: 800px;
+    }    
+    100%{
+        margin-top: 0px;
+        margin-left: 1000px;
+    }    
+}
+.calender {
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .date {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
 
 
 
+
+
+
+
+
+
+
+@media all and (min-width: 1015px) and (max-width: 1115px){
+    .container {
+        width: 29%;
+    }
+}
 
 @media all and (min-width: 700px) and (max-width: 900px){
     .box {
